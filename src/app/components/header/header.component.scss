@@ -1,9 +1,18 @@
-.header{
-    background-color: #5254FF;
+.header {
+    background-color: #5254FF !important;
     padding: 25px;
 }
 
-.navbar-brand a, .navbar-nav .nav-link {
+.navbar-brand, .navbar-brand a, .navbar-nav .nav-link {
     text-decoration: none;
     color: #FFF;
+    padding-right: 40px;
+}
+
+//Responsive
+@media (max-width: 991.98px) {
+
+    .navbar-nav .nav-item {
+        margin-top: 30px;
+    }
 }
