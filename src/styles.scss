@@ -1,7 +1,10 @@
-body {
-    font-family: "Poppins", sans-serif;
-}
-
 //Global Variables
+$text-color: #303030;
 $header-buttons-bg: #5254FF;
 $header-buttons-bg-text: #FFF;
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 40px;
+    color: $text-color;
+}

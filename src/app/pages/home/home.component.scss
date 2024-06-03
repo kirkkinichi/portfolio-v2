@@ -1,0 +1,19 @@
+@import '../../../styles.scss';
+
+.main-div {
+    margin-top: 250px;
+}
+
+.main-title {
+    font-size: 70px;
+}
+
+.sub-title {
+    margin-top: 50px;
+}
+
+.home-btn {
+    margin-top: 80px;
+    color: $header-buttons-bg-text;
+    background-color: $header-buttons-bg;
+}
