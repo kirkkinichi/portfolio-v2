@@ -1,11 +1,13 @@
+@import '../../../styles.scss';
+
 .header {
-    background-color: #5254FF !important;
+    background-color: $header-buttons-bg;
     padding: 25px;
 }
 
 .navbar-brand, .navbar-brand a, .navbar-nav .nav-link {
     text-decoration: none;
-    color: #FFF;
+    color: $header-buttons-bg-text;
     padding-right: 40px;
 }
 
