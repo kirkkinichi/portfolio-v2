@@ -1,0 +1,19 @@
+@import '../../../styles.scss';
+
+.footer {    
+    width: 100%;
+    background-color: $header-buttons-bg;
+    padding: 10px 0;
+    text-align: center;
+    color: $header-buttons-bg-text;
+}
+
+.icon-a {
+    color: $header-buttons-bg-text;
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.icon-a:hover {
+    color: $element-hover;
+}
