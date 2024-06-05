@@ -1,12 +1,11 @@
 <app-header></app-header>
-<div class="content">
-    <app-home></app-home>
-</div>
-<app-parallax></app-parallax>
-<div class="content">
-    <app-about-me></app-about-me>
-    <app-skills></app-skills>
-    <app-projects></app-projects>
-    <app-contact></app-contact>
-</div>
+<app-home></app-home>
+<app-parallax [backgroundImage]="'../../../assets/img/parallax-img.png'"></app-parallax>
+<app-about-me></app-about-me>
+<app-parallax [backgroundImage]="'../../../assets/img/parallax-img2.png'"></app-parallax>
+<app-skills></app-skills>
+<app-parallax [backgroundImage]="'../../../assets/img/parallax-img3.png'"></app-parallax>
+<app-projects></app-projects>
+<app-parallax [backgroundImage]="'../../../assets/img/parallax-img4.png'"></app-parallax>
+<app-contact></app-contact>
 <app-footer></app-footer>
