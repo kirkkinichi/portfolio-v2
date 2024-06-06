@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ParallaxComponent } from './components/parallax/parallax.component';
+import { DownArrowComponent } from './components/down-arrow/down-arrow.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ParallaxComponent } from './components/parallax/parallax.component';
     ProjectsComponent,
     HomeComponent,
     FooterComponent,
-    ParallaxComponent
+    ParallaxComponent,
+    DownArrowComponent
   ],
   imports: [
     BrowserModule,
