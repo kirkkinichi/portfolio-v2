@@ -4,7 +4,7 @@ import { ScrollService } from '../../services/scroll.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   currentSection: string = '';
@@ -13,12 +13,12 @@ export class HeaderComponent {
 
   scrollToTop() {
     this.scrollService.scrollToTop();
-    this.currentSection = 'home';  // Atualize o estado apenas quando clicar em 'Home'
+    this.currentSection = 'home';
   }
 
   scrollToSection(sectionId: string) {
     this.scrollService.scrollToElement(sectionId);
-    this.currentSection = sectionId;  // Atualize o estado ao navegar para outras seções
+    this.currentSection = sectionId;
   }
 
   @HostListener('window:scroll', [])
@@ -30,7 +30,7 @@ export class HeaderComponent {
       const element = document.getElementById(section);
       if (element) {
         const rect = element.getBoundingClientRect();
-        if (rect.top <= 50 && rect.bottom >= 50) {  // 50 é um valor de margem superior para ajustar a ativação
+        if (rect.top <= 50 && rect.bottom >= 50) {
           visibleSection = section;
           break;
         }

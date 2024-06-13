@@ -15,11 +15,13 @@
     color: $element-hover;
 }
 
-/* header.component.css */
 .nav-item.active .nav-link {
     color: $element-hover;
 }
-  
+
+.nav-link {
+    cursor: pointer;
+}
 
 //Responsive
 @media (max-width: 991.98px) {
