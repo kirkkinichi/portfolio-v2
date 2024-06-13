@@ -23,7 +23,7 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const sections = ['home', 'about-me', 'skills', 'projects', 'contact'];
+    const sections = ['about-me', 'skills', 'projects', 'contact'];
     let visibleSection = '';
 
     for (const section of sections) {
