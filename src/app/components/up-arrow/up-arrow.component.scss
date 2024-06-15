@@ -1,0 +1,15 @@
+@import '../../../styles.scss';
+
+.up-arrow-p {
+    font-size: 20px;
+}
+
+.up-arrow-a {
+    cursor: pointer;
+    color: $header-buttons-bg;
+    font-size: 40px;
+}
+
+.up-arrow-a:hover {
+    color: $element-hover;
+}
