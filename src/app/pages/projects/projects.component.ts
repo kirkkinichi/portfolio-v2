@@ -20,40 +20,22 @@ export class ProjectsComponent {
 
 	projects: Project[] = [
 		{
-			title: 'Project 1',
-			tools: '',
-			description: 'Project Java',
-			imageUrl: 'assets/img/project-img_kirk_and_morty.png',
-			githubUrl: '',
-			liveUrl: '',
-			category: 'Java'
-		},
-		{
-			title: 'Project 2',
-			tools: '',
-			description: 'Project Java e Angular',
-			imageUrl: '',
-			githubUrl: '',
-			liveUrl: '',
-			category: 'Angular, Java'
-		},
-		{
 			title: 'Kirk and Morty',
-			tools: 'Angular CLI, Node.js, Docker, Bootstrap, Font Awesome.',
+			tools: 'Angular, Bootstrap, Docker, Font Awesome, HTML, Node.js, SCSS, TypeScript.',
 			description: 'Kirk and Morty is a single-page application that uses Angular framework and The Rick and Morty API to list and detail the Characters, Episodes, and Locations featured in the series.',
-			imageUrl: 'assets/img/project-img_kirk_and_morty.png',
+			imageUrl: 'assets/img/kirk-and-morty-project.png',
 			githubUrl: 'https://github.com/kirkkinichi/rick-morty-project',
 			liveUrl: 'https://kirk-and-morty.kirksilva.com/',
-			category: 'Angular'
+			category: 'Angular, Bootstrap, Docker, Font Awesome, HTML, Node.js, SCSS, TypeScript'
 		},
 		{
-			title: 'Project 4',
-			tools: '', 
-			description: 'Project HTML', 
-			imageUrl: '', 
-			githubUrl: '',
+			title: 'Minesweeper Java',
+			tools: 'Java', 
+			description: 'Project Java', 
+			imageUrl: 'assets/img/minesweeper-java-project.png', 
+			githubUrl: 'https://github.com/kirkkinichi/minesweeper-java',
 			liveUrl: '',
-			category: 'HTML'
+			category: 'Java'
 		}
 	];
 
