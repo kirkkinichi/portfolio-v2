@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+.curriculum-img {
+    width: 35px;
+}
+
+.btn-download-resume{
+    border: 2px solid;
+    color: $header-buttons-bg;
+    border-color: $header-buttons-bg;
+}
+
+.btn-download-resume:hover{
+    color: $element-hover;
+    border-color: $element-hover;
+}
