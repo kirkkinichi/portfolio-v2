@@ -29,7 +29,7 @@ export class DownArrowComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const sections = ['about-me', 'skills', 'projects', 'contact'];
+    const sections = ['about-me', 'skills', 'projects', 'curriculum'];
     let visibleSection = '';
 
     for (const section of sections) {
