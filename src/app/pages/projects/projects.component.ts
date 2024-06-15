@@ -31,7 +31,7 @@ export class ProjectsComponent {
 		{
 			title: 'Minesweeper Java',
 			tools: 'Java', 
-			description: 'Project Java', 
+			description: 'Minesweeper Game Project, developed in Java during the course: Java 2022 COMPLETO: Do Zero ao Profissional + Projetos! - Instructed by: Leonardo Moura Leitao and Cod3r Cursos Online, through the Udemy platform.', 
 			imageUrl: 'assets/img/minesweeper-java-project.png', 
 			githubUrl: 'https://github.com/kirkkinichi/minesweeper-java',
 			liveUrl: '',
