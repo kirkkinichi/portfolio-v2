@@ -5,7 +5,13 @@
     padding: 25px;
 }
 
-.navbar-brand, .navbar-brand a, .navbar-nav .nav-link {
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-brand,
+.navbar-brand a,
+.navbar-nav .nav-link {
     text-decoration: none;
     color: $header-buttons-bg-text;
     padding-right: 40px;
@@ -21,6 +27,18 @@
 
 .nav-link {
     cursor: pointer;
+}
+
+.flag {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.active-flag {
+    filter: none;
 }
 
 //Responsive

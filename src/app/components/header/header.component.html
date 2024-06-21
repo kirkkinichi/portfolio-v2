@@ -1,4 +1,4 @@
-<nav class="header navbar navbar-expand-lg fixed-top navbar-dark">
+<nav class="header navbar navbar-expand-lg fixed-top">
 	<div class="container">
 		<div class="navbar-brand"><a routerLink="/" (click)="scrollToTop()">KIRK SILVA</a></div>
 
@@ -20,6 +20,10 @@
 				</li>
 				<li class="nav-item" [class.active]="currentSection === 'curriculum'">
 					<a class="nav-link" (click)="scrollToSection('curriculum')">Curriculum</a>
+				</li>
+				<li class="nav-item">
+					<img src="../../../assets/icons/pt-br.png" alt="Portuguese" class="flag">
+					<img src="../../../assets/icons/en-us.png" alt="English" class="flag">
 				</li>
 			</ul>
 		</div>
