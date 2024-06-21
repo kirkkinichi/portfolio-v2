@@ -1,5 +1,5 @@
 <div id="projects" class="content">
-    <h1 class="text-center content-title">Projects</h1>
+    <h1 class="text-center content-title">{{ 'PROJECTS' | translate }}</h1>
     <div class="row text-center mt-4">
         <div class="col-md-12">
             <button class="filter-btn btn btn-lg mt-4" (click)="filterProjects('Java')"
@@ -15,7 +15,7 @@
     <hr class="mt-5">
 
     <div *ngIf="showAdvice && filteredProjects.length === 0" class="alert alert-warning mt-5" role="alert">
-        No projects for: {{ showAdvice }}.
+        {{ 'NO_PROJECTS_FOR' | translate }}: {{ showAdvice }}.
     </div>
 
     <div class="row justify-content-md-center mt-5" *ngFor="let project of filteredProjects">
@@ -26,16 +26,14 @@
             <h2 class="text-center">{{ project.title }}</h2>
             <hr>
             <p class="mt-4">
-                <strong>Description: </strong>{{ project.description }}
+                <strong>{{ 'DESCRIPTION' | translate }}: </strong>{{ translateProjectDescription(project) }}
             </p>
             <p class="mt-3">
-                <strong>Technologies and Tools: </strong>{{ project.tools }}
+                <strong>{{ 'TECHNOLOGIES_AND_TOOLS' | translate }}: </strong>{{ project.tools }}
             </p>
 
-            <button class="project-btn btn btn-dark btn-lg mt-3" (click)="openLink(project.githubUrl)">See on
-                GitHub</button>
-            <button class="project-btn btn btn-danger btn-lg mt-3" (click)="openLink(project.liveUrl)">Live
-                Preview</button>
+            <button class="project-btn btn btn-dark btn-lg mt-3" (click)="openLink(project.githubUrl)">{{ 'SEE_ON_GITHUB' | translate }}</button>
+            <button class="project-btn btn btn-danger btn-lg mt-3" (click)="openLink(project.liveUrl)">{{ 'LIVE_PREVIEW' | translate }}</button>
         </div>
     </div>
 

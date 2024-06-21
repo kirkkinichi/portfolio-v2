@@ -1,0 +1,30 @@
+{
+    "ABOUT_ME": "Sobre Mim",
+    "SKILLS": "Habilidades",
+    "PROJECTS": "Projetos",
+    "CURRICULUM": "Currículo",
+
+    "COMPUTER_ENGINEER": "Engenheiro da Computação",
+    "FULL_STACK_DEVELOPER": "Desenvolvedor Full Stack",
+    "REACH_OUT": "Entre em contato",
+
+    "ABOUT_ME_PARAGRAPH": "Sou um Engenheiro da Computação residente no Brasil e possuo uma sólida base em engenharia e programação. Ao decorrer da minha graduação, estudei diversas disciplinas, desde algoritmos, programação orientada a objeto e estruturas de dados até sistemas distribuídos e inteligência artificial. Minha formação inclui experiência em projetos práticos e teóricos, onde sou capaz de aplicar meu conhecimento em ambientes desafiadores. Além disso, desenvolvi competências em resolução de problemas, pensamento analítico e trabalho em equipe. Estou sempre em busca de aprender e continuo explorando novas tecnologias e metodologias para me manter atualizado com as tendências do mercado. Possuo Inglês avançado, e no momento estou cursando Pós-Graduação em Arquitetura de Software.",
+    
+    "DESCRIPTION": "Descrição",
+    "TECHNOLOGIES_AND_TOOLS": "Tecnologias e Ferramentas",
+    "NO_PROJECTS_FOR" : "Sem Projetos para",
+    "PROJECT_DESCRIPTION_KIRK_AND_MORTY": "O Kirk and Morty é uma aplicação Single-page que utiliza o framework Angular e a API : The Rick and Morty API para listar e detalhar os Personagens, Episódios e os Locais que a série apresenta.",
+    "PROJECT_DESCRIPTION_MINESWEEPER_JAVA": "Projeto do jogo Campo Minado, desenvolvido em Java durante o curso: Java 2022 COMPLETO: Do Zero ao Profissional + Projetos! - Instruído por: Leonardo Moura Leitao e Cod3r Cursos Online, através da plataforma Udemy.",
+    "SEE_ON_GITHUB": "Veja no GitHub",
+    "LIVE_PREVIEW": "Visualização Ao Vivo",
+
+    "PT_BR_VERSION": "Versão PT-BR",
+    "EN_US_VERSION": "Versão EN-US",
+    "PT_BR_CURRICULUM": "Currículo PT-BR",
+    "EN_US_CURRICULUM": "Currículo EN-US",
+    "BACK_TO_TOP": "Voltar ao Início",
+
+    "ICONS_BY": "Icones por",
+    "AND": "e"
+  }
+  

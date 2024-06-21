@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 interface Project {
 	title: string;
@@ -30,9 +31,9 @@ export class ProjectsComponent {
 		},
 		{
 			title: 'Minesweeper Java',
-			tools: 'Java', 
-			description: 'Minesweeper Game Project, developed in Java during the course: Java 2022 COMPLETO: Do Zero ao Profissional + Projetos! - Instructed by: Leonardo Moura Leitao and Cod3r Cursos Online, through the Udemy platform.', 
-			imageUrl: 'assets/img/minesweeper-java-project.png', 
+			tools: 'Java',
+			description: 'Minesweeper Game Project, developed in Java during the course: Java 2022 COMPLETO: Do Zero ao Profissional + Projetos! - Instructed by: Leonardo Moura Leitao and Cod3r Cursos Online, through the Udemy platform.',
+			imageUrl: 'assets/img/minesweeper-java-project.png',
 			githubUrl: 'https://github.com/kirkkinichi/minesweeper-java',
 			liveUrl: '',
 			category: 'Java'
@@ -44,8 +45,13 @@ export class ProjectsComponent {
 	filterIsActive: string[] = [];
 	showAdvice = '';
 
-	constructor() {
+	constructor(private translate: TranslateService) {
 		this.filteredProjects = this.projects;
+		translate.setDefaultLang('en');
+	}
+
+	translateProjectDescription(project: Project): string {
+		return this.translate.instant(`PROJECT_DESCRIPTION_${project.title.toUpperCase().replace(/ /g, '_')}`);
 	}
 
 	// Display '+' in advice
@@ -83,5 +89,5 @@ export class ProjectsComponent {
 	// Verify if filter is active
 	isFilterActive(filter: string): boolean {
 		return this.filterIsActive.includes(filter);
-	}	
+	}
 }

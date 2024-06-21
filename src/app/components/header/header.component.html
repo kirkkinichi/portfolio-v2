@@ -1,6 +1,8 @@
-<nav class="header navbar navbar-expand-lg fixed-top">
+<nav class="header navbar navbar-expand-lg fixed-top navbar-dark">
 	<div class="container">
-		<div class="navbar-brand"><a routerLink="/" (click)="scrollToTop()">KIRK SILVA</a></div>
+		<div class="navbar-brand">
+			<a routerLink="/" (click)="scrollToTop()">KIRK SILVA</a>
+		</div>
 
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,22 +10,24 @@
 		</button>
 
 		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav align-items-center">
 				<li class="nav-item" [class.active]="currentSection === 'about-me'">
-					<a class="nav-link" (click)="scrollToSection('about-me')">About Me</a>
+					<a class="nav-link" (click)="scrollToSection('about-me')">{{ 'ABOUT_ME' | translate }}</a>
 				</li>
 				<li class="nav-item" [class.active]="currentSection === 'skills'">
-					<a class="nav-link" (click)="scrollToSection('skills')">Skills</a>
+					<a class="nav-link" (click)="scrollToSection('skills')">{{ 'SKILLS' | translate }}</a>
 				</li>
 				<li class="nav-item" [class.active]="currentSection === 'projects'">
-					<a class="nav-link" (click)="scrollToSection('projects')">Projects</a>
+					<a class="nav-link" (click)="scrollToSection('projects')">{{ 'PROJECTS' | translate }}</a>
 				</li>
 				<li class="nav-item" [class.active]="currentSection === 'curriculum'">
-					<a class="nav-link" (click)="scrollToSection('curriculum')">Curriculum</a>
+					<a class="nav-link" (click)="scrollToSection('curriculum')">{{ 'CURRICULUM' | translate }}</a>
 				</li>
-				<li class="nav-item">
-					<img src="../../../assets/icons/pt-br.png" alt="Portuguese" class="flag">
-					<img src="../../../assets/icons/en-us.png" alt="English" class="flag">
+				<li class="nav-item d-flex align-items-center">
+					<img src="../../../assets/icons/en-us.png" alt="English" class="flag"
+						[class.active-flag]="currentLanguage === 'en'" (click)="setLanguage('en')">
+					<img src="../../../assets/icons/pt-br.png" alt="Portuguese" class="flag"
+						[class.active-flag]="currentLanguage === 'pt'" (click)="setLanguage('pt')">
 				</li>
 			</ul>
 		</div>
