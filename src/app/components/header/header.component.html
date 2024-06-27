@@ -29,8 +29,16 @@
 					<img src="../../../assets/icons/pt-br.png" alt="Portuguese" class="flag"
 						[class.active-flag]="currentLanguage === 'pt'" (click)="setLanguage('pt')">
 				</li>
-				<li class="nav-item">
-					<button (click)="toggleTheme()">Toggle Theme</button>
+				<li class="nav-item theme-li">
+					<label class="theme-switch">
+						<input type="checkbox" (change)="toggleTheme()" [checked]="isDarkTheme">
+						<span class="slider">
+							<img class="sun-icon" src="../../../assets/icons/sun.png"
+								[ngClass]="{'inactive': isDarkTheme}">
+							<img class="moon-icon" src="../../../assets/icons/moon.png"
+								[ngClass]="{'inactive': !isDarkTheme}">
+						</span>
+					</label>
 				</li>
 			</ul>
 		</div>

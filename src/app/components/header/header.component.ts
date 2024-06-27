@@ -1,7 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { ScrollService } from '../../services/scroll.service';
 import { TranslateService } from '@ngx-translate/core';
-import { ThemeService } from '../../services/theme.service'; // Ajuste do caminho do import
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
 	selector: 'app-header',
@@ -11,12 +11,14 @@ import { ThemeService } from '../../services/theme.service'; // Ajuste do caminh
 export class HeaderComponent {
 	currentSection: string = '';
 	currentLanguage: string = 'en';
+	isDarkTheme: boolean;
 
 	constructor(
 		private scrollService: ScrollService,
 		private translate: TranslateService,
 		private themeService: ThemeService
 	) {
+		this.isDarkTheme = this.themeService.isDarkTheme();
 		translate.setDefaultLang('en');
 		translate.use('en');
 	}
@@ -57,5 +59,6 @@ export class HeaderComponent {
 
 	toggleTheme() {
 		this.themeService.toggleTheme();
+		this.isDarkTheme = this.themeService.isDarkTheme();
 	}
 }
