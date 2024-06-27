@@ -1,12 +1,14 @@
 //Global Variables
 $text-color: #303030;
 $element-hover:#74f8ff;
-$header-buttons-bg: #5254FF;
+$header-buttons-bg: #000;
 $header-buttons-bg-text: #FFF;
+$body-bck-color: #EFEFEF;
 
 body {
     font-family: "Poppins", sans-serif;
     color: $text-color;
+    background-color: $body-bck-color;
 }
 
 .content {
