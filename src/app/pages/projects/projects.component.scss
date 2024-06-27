@@ -8,18 +8,18 @@
     margin-right: 15px;
     font-size: 20px;
     padding: 5px 10px;
-    color: $header-buttons-bg-text;
-    background-color: $header-buttons-bg;
+    color: var(--bg-color-text);
+    background-color: var(--bg-color);
 }
 
 .filter-btn:hover {
-    background-color: $element-hover;
+    background-color: var(--hover-color);
 }
 
 .btn-active,
 .btn-active:hover {
-    background-color: $element-hover;
-    color: $header-buttons-bg-text;
+    background-color: var(--hover-color);
+    color: var(--bg-color-text);
 }
 
 .last-btn {
@@ -31,10 +31,13 @@
     font-size: 15px;
     padding: 5px 10px;
     border: 0px;
-    color: $header-buttons-bg-text;
+    color: var(--bg-color-text);
 }
 
 .project-btn:hover {
-    background-color: $element-hover;
+    background-color: var(--hover-color);
 }
 
+.github-btn {
+    background-color: var(--bg-color);
+}

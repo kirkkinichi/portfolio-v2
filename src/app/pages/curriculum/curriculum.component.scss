@@ -11,11 +11,11 @@
 
 .btn-download-resume{
     border: 2px solid;
-    color: $header-buttons-bg;
-    border-color: $header-buttons-bg;
+    color: var(--arrow-bg-color);
+    border-color: var(--arrow-bg-color);
 }
 
 .btn-download-resume:hover{
-    color: $element-hover;
-    border-color: $element-hover;
+    color: var(--hover-color);
+    border-color: var(--hover-color);
 }

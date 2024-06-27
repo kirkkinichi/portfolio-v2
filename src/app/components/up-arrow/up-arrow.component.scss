@@ -6,10 +6,10 @@
 
 .up-arrow-a {
     cursor: pointer;
-    color: $header-buttons-bg;
+    color: var(--arrow-bg-color);
     font-size: 40px;
 }
 
 .up-arrow-a:hover {
-    color: $element-hover;
+    color: var(--hover-color);
 }

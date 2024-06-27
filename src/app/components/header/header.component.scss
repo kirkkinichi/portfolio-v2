@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 .header {
-    background-color: $header-buttons-bg;
+    background-color: var(--navbar-bg-color);
     padding: 25px;
 }
 
@@ -13,16 +13,16 @@
 .navbar-brand a,
 .navbar-nav .nav-link {
     text-decoration: none;
-    color: $header-buttons-bg-text;
+    color: var(--bg-color-text);
     padding-right: 40px;
 }
 
 .navbar-nav .nav-item:hover .nav-link {
-    color: $element-hover;
+    color: var(--hover-color);
 }
 
 .nav-item.active .nav-link {
-    color: $element-hover;
+    color: var(--hover-color);
 }
 
 .nav-link {

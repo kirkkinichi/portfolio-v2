@@ -32,7 +32,7 @@
                 <strong>{{ 'TECHNOLOGIES_AND_TOOLS' | translate }}: </strong>{{ project.tools }}
             </p>
 
-            <button class="project-btn btn btn-dark btn-lg mt-3" (click)="openLink(project.githubUrl)">{{ 'SEE_ON_GITHUB' | translate }}</button>
+            <button class="project-btn btn btn-dark btn-lg mt-3 github-btn" (click)="openLink(project.githubUrl)">{{ 'SEE_ON_GITHUB' | translate }}</button>
             <button class="project-btn btn btn-danger btn-lg mt-3" (click)="openLink(project.liveUrl)">{{ 'LIVE_PREVIEW' | translate }}</button>
         </div>
     </div>

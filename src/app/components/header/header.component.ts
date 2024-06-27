@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { ScrollService } from '../../services/scroll.service';
 import { TranslateService } from '@ngx-translate/core';
+import { ThemeService } from '../../services/theme.service'; // Ajuste do caminho do import
 
 @Component({
 	selector: 'app-header',
@@ -11,7 +12,11 @@ export class HeaderComponent {
 	currentSection: string = '';
 	currentLanguage: string = 'en';
 
-	constructor(private scrollService: ScrollService, private translate: TranslateService) {
+	constructor(
+		private scrollService: ScrollService,
+		private translate: TranslateService,
+		private themeService: ThemeService
+	) {
 		translate.setDefaultLang('en');
 		translate.use('en');
 	}
@@ -48,5 +53,9 @@ export class HeaderComponent {
 	setLanguage(language: string) {
 		this.currentLanguage = language;
 		this.translate.use(language);
+	}
+
+	toggleTheme() {
+		this.themeService.toggleTheme();
 	}
 }

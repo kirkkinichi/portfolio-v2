@@ -15,10 +15,10 @@
 
 .home-btn {
     margin-top: 80px;
-    color: $header-buttons-bg-text;
-    background-color: $header-buttons-bg;
+    color: var(--bg-color-text);
+    background-color: var(--bg-color);
 }
 
 .home-btn:hover {
-    background-color: $element-hover;
+    background-color: var(--hover-color);
 }

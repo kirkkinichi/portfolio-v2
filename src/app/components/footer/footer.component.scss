@@ -2,21 +2,21 @@
 
 .footer {    
     width: 100%;
-    background-color: $header-buttons-bg;
+    background-color: var(--navbar-bg-color);
     padding: 10px 0;
     text-align: center;
-    color: $header-buttons-bg-text;
+    color: var(--bg-color-text);
 }
 
 .icon-a {
-    color: $header-buttons-bg-text;
+    color: var(--bg-color-text);
     font-size: 35px;
     margin-right: 20px;
     cursor: pointer;
 }
 
 .icon-a:hover {
-    color: $element-hover;
+    color: var(--hover-color);
 }
 
 .p-footer {
@@ -24,10 +24,10 @@
 }
 
 .ref-a {
-    color: $header-buttons-bg-text;
+    color: var(--bg-color-text);
 }
 
 .ref-a:hover {
-    color: $element-hover;
+    color: var(--hover-color);
 }
 
