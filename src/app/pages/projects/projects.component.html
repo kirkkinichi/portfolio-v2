@@ -2,13 +2,11 @@
     <h1 class="text-center content-title">{{ 'PROJECTS' | translate }}</h1>
     <div class="row text-center mt-4">
         <div class="col-md-12">
-            <button class="filter-btn btn btn-lg mt-4" (click)="filterProjects('Java')"
-                [class.active]="isFilterActive('Java')" 
-                [class.btn-active]="isFilterActive('Java')">Java</button>
-
             <button class="filter-btn btn btn-lg mt-4" (click)="filterProjects('Angular')"
                 [class.active]="isFilterActive('Angular')"
                 [class.btn-active]="isFilterActive('Angular')">Angular</button>
+            <button class="filter-btn btn btn-lg mt-4" (click)="filterProjects('Java')"
+                [class.active]="isFilterActive('Java')" [class.btn-active]="isFilterActive('Java')">Java</button>
         </div>
     </div>
 
@@ -32,8 +30,10 @@
                 <strong>{{ 'TECHNOLOGIES_AND_TOOLS' | translate }}: </strong>{{ project.tools }}
             </p>
 
-            <button class="project-btn btn btn-dark btn-lg mt-3 github-btn" (click)="openLink(project.githubUrl)">{{ 'SEE_ON_GITHUB' | translate }}</button>
-            <button class="project-btn btn btn-danger btn-lg mt-3" (click)="openLink(project.liveUrl)">{{ 'LIVE_PREVIEW' | translate }}</button>
+            <button class="project-btn btn btn-dark btn-lg mt-3 github-btn" (click)="openLink(project.githubUrl)">{{
+                'SEE_ON_GITHUB' | translate }}</button>
+            <button class="project-btn btn btn-danger btn-lg mt-3" (click)="openLink(project.liveUrl)">{{ 'LIVE_PREVIEW'
+                | translate }}</button>
         </div>
     </div>
 

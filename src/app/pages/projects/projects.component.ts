@@ -37,6 +37,15 @@ export class ProjectsComponent {
 			githubUrl: 'https://github.com/kirkkinichi/minesweeper-java',
 			liveUrl: '',
 			category: 'Java'
+		},
+		{
+			title: 'Portfolio',
+			tools: 'Angular, Bootstrap, HTML, SCSS, TypeScript.',
+			description: '',
+			imageUrl: 'assets/img/portfolio-project.png',
+			githubUrl: 'https://github.com/kirkkinichi/portfolio-v2',
+			liveUrl: '',
+			category: 'Angular'
 		}
 	];
 
