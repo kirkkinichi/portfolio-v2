@@ -121,13 +121,22 @@
     }
 }
 
-
-
-
-//Responsive
 @media (max-width: 991.98px) {
 
     .navbar-nav .nav-item {
         margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .navbar-brand,
+    .navbar-brand a,
+    .navbar-nav .nav-link {
+        padding-right: 0px;
+    }
+
+    .theme-li {
+        margin-left: 0px;
     }
 }
