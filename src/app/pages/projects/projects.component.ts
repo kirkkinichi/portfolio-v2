@@ -28,6 +28,14 @@ export class ProjectsComponent {
 			category: 'Angular, Bootstrap, Docker, Font Awesome, HTML, Node.js, SCSS, TypeScript'
 		},
 		{
+			title: 'Sistema de Gestão',
+			tools: 'PHP, Laravel, Laravel Sail, Docker, MySQL, Tailwind CSS, Ubuntu WSL',
+			description: '',
+			imageUrl: 'assets/img/sistema-gestao-project.png',
+			githubUrl: 'https://github.com/kirkkinichi/sistema-gestao',
+			category: 'PHP, Laravel, Laravel Sail, Docker, MySQL, Tailwind CSS, Ubuntu WSL'
+		},
+		{
 			title: 'Products Management',
 			tools: 'NestJS, SQLite, Angular, Node.js, Docker, Bootstrap',
 			description: '',
