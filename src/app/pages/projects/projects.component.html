@@ -7,6 +7,10 @@
                 [class.btn-active]="isFilterActive('Angular')">Angular</button>
             <button class="filter-btn btn btn-lg mt-4" (click)="filterProjects('Java')"
                 [class.active]="isFilterActive('Java')" [class.btn-active]="isFilterActive('Java')">Java</button>
+            <button class="filter-btn btn btn-lg mt-4" (click)="filterProjects('NestJS')"
+                [class.active]="isFilterActive('NestJS')" [class.btn-active]="isFilterActive('NestJS')">NestJS</button>
+                <button class="filter-btn btn btn-lg mt-4" (click)="filterProjects('Docker')"
+                    [class.active]="isFilterActive('Docker')" [class.btn-active]="isFilterActive('Docker')">Docker</button>
         </div>
     </div>
 
