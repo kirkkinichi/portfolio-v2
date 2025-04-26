@@ -28,6 +28,14 @@ export class ProjectsComponent {
 			category: 'Angular, Bootstrap, Docker, Font Awesome, HTML, Node.js, SCSS, TypeScript'
 		},
 		{
+			title: 'Products Management',
+			tools: 'NestJS, SQLite, Angular, Node.js, Docker, Bootstrap',
+			description: '',
+			imageUrl: 'assets/img/products-management-project.png',
+			githubUrl: 'https://github.com/kirkkinichi/products-management',
+			category: 'NestJS, SQLite, Angular, Node.js, Docker, Bootstrap'
+		},
+		{
 			title: 'Minesweeper Java',
 			tools: 'Java',
 			description: 'Minesweeper Game Project, developed in Java during the course: Java 2022 COMPLETO: Do Zero ao Profissional + Projetos! - Instructed by: Leonardo Moura Leitao and Cod3r Cursos Online, through the Udemy platform.',
